@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.split.left h1 {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 18px 20px #333;
+  position: absolute;
+  left: 50%;
+  bottom: 0.1%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.split.right h1 {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 18px 20px #333;
+  position: absolute;
+  left: 50%;
+  bottom: 0.1%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("vs.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background: url("front.jpg");
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  background-size: 855px 800px;
+}
+
+.split.left::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("back.jpg");
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right {
+  right: 0;
+  background: url("front-right.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 860px 800px;
+}
+
+.split.right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("back.jpg");
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left,
+.split.right,
+.split.left::before,
+.split.right::before {
+  transition: all 1000ms ease-in-out;
+}
+
+.hover-left .left {
+  width: 75%;
+  z-index: 1;
+}
+
+.hover-left .right {
+  width: 25%;
+  background-size: 100% 800px;
+}
+
+.hover-right .right {
+  width: 75%;
+  z-index: 1;
+}
+
+.hover-right .left {
+  width: 25%;
+  background-size: 100% 800px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+}
