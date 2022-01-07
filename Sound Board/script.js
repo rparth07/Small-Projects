@@ -24,6 +24,7 @@ function stopSongs() {
     song.pause();
     song.currentTime = 0;
   });
+  
 }
 
 const stopsong = document.getElementById("stop");
