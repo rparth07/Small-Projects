@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #1b2d44;
+  color: white;
+  font-family: "helvetica", sans-serif;
+  font-weight: 100;
+  font-size: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.controls {
+  margin-bottom: 5rem;
+}
+
+input {
+  width: 100px;
+}
+
+img {
+  padding: 1rem;
+  width: 25rem;
+  height: 25rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 25rem;
+  min-height: 25rem;
+  height: 25rem;
+  width: 25rem;
+  filter: blur(15px);
+  background-color: black;
+}

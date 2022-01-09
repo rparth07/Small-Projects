@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Applier</title>
+  </head>
+  <body>
+    <h2>CSS Applier</h2>
+    <div class="controls">
+      <label for="spacing">Spacing:</label>
+      <input
+        type="range"
+        id="spacing"
+        min="25"
+        max="50"
+        value="25"
+        data-sizing="rem"
+      />
+      <label for="blur">Blur:</label>
+      <input
+        type="range"
+        id="blur"
+        min="0"
+        max="25"
+        value="15"
+        data-sizing="px"
+      />
+      <label for="base">Base Color:</label>
+      <input type="color" id="base" name="base" value="rgb(255,255,0)" />
+    </div>
+    <div class="container">
+      <img src="images/2022.jpg" alt="2022" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
